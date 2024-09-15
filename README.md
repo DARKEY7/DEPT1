@@ -1,4 +1,4 @@
-# DEPT1
+# DEPTH1-VULNHUB
 
 lets begin dig in,,,,,,,,,,,,,,,,
 
