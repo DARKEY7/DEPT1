@@ -19,6 +19,66 @@ MD5: 47975764E3A6AAD07749C35072C1B025
 SHA1: 6516163F84ACDDD846981C94262EC3538A18970E
 
 
+lets begin enumeration::::::
+  nmap_------
+  # Nmap 7.94SVN scan initiated Sun Sep 15 13:14:16 2024 as: nmap -sV -sC -Pn -oN nmap 192.168.73.144
+Nmap scan report for 192.168.73.144
+Host is up (0.00024s latency).
+Not shown: 999 filtered tcp ports (no-response)
+PORT     STATE SERVICE VERSION
+8080/tcp open  http    Apache Tomcat/Coyote JSP engine 1.1
+| http-methods: 
+|_  Potentially risky methods: PUT DELETE
+|_http-title: Apache Tomcat
+|_http-server-header: Apache-Coyote/1.1
+MAC Address: 00:0C:29:29:4E:C1 (VMware)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Sep 15 13:14:32 2024 -- 1 IP address (1 host up) scanned in 16.11 seconds
+
+ 
+ 
+ 
+ 
+ 
+ ***NIKTO  is a pluggable web server and CGI scanner written in Perl, using rfp’s LibWhisker to perform fast security or informational checks.
+
+
+
+
+nikto -h http://192.168.73.144:8080/
+
+
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Target IP:          192.168.73.144
++ Target Hostname:    192.168.73.144
++ Target Port:        8080
++ Start Time:         2024-09-16 01:57:30 (GMT5.5)
+---------------------------------------------------------------------------
++ Server: Apache-Coyote/1.1
++ /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers
++ /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a differe: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ OPTIONS: Allowed HTTP Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS .
++ HTTP method ('Allow' Header): 'PUT' method could allow clients to save files on the web server.
++ HTTP method ('Allow' Header): 'DELETE' may allow clients to remove files on the web server.
++ /: Appears to be a default Apache Tomcat install.
++ /manager/html: Default Tomcat Manager / Host Manager interface found.
++ /test.jsp: This might be interesting.
++ /manager/status: Default Tomcat Server Status interface found.
++ 8254 requests: 0 error(s) and 9 item(s) reported on remote host
++ End Time:           2024-09-16 01:57:45 (GMT5.5) (15 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+
+
+
+
+
+  
+
+
 
 
 
