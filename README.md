@@ -119,8 +119,7 @@ the i successfully get the flag
 which is ::
 ::::::::::::::::::::::::::::::flag{WellThatWasEasy}:::::::::::::::::::::::::::::
 
-
-{ESY} DEPTH1---VULNHUB
+ that's went quiet  easy DEPTH1---VULNHUB
 
 
 
