@@ -33,7 +33,7 @@ lets begin enumeration::::::
  listing out for user name
  ![2024-09-23_13-18](https://github.com/user-attachments/assets/e861d113-8f3a-42b9-a3a4-9616fa4865a9)
 
-
+Now i've to generate reverse-shell "here's how"
 ![2024-09-23_13-18_1](https://github.com/user-attachments/assets/4d44a837-285e-456d-9d4a-c8cde7615465)
 
 ::::::::getting the shell:::Boooooyahhhhhhhhhh:""""::: 
